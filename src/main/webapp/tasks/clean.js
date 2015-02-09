@@ -7,6 +7,6 @@ gulp.task('clean', function () {
 });
 
 var pipeClean = function(target) {
-    gulp.src(target.dest, {read: false})
-        .pipe(clean());
+    //gulp.src(target.dest, {read: false})
+    //    .pipe(clean());
 };

@@ -18,7 +18,7 @@ release/build/*
 release/cache
 .classpath
 .project
-node_modules/
+**/node_modules/
 **/bower_components/
 */**/.tmp
 .settings/
@@ -26,3 +26,4 @@ node_modules/
 .tmp/
 **/*.log
 **/*.log.*
+**/*.css

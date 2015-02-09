@@ -8,7 +8,7 @@ gulp.task('sass',function(){
     pipeSass(gulp.opts.path);
 });
 var pipeSass = function(target) {
-    gulp.src(target.src+'*.scss')
+    gulp.src(target.src+'*.{scss,sass}')
         .pipe(sass())
         .pipe(gulp.dest(target.dest))
         .pipe(reload({stream:true}));

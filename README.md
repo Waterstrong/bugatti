@@ -5,13 +5,20 @@
 
 ——run in ubuntu:
 
+terminal to the bugatti root dir:
+
 './gradlew'
 
 './gradlew cleaIdea idea'
 
 use intelliJ to open the '*.ipr'
 
-terminal to the bugatti root dir:
+use './gradlew jettyRun' to check in browser
+
+if need debugging in IntelliJ, just debug 'VeyronServerLauncher'
+
+
+terminal to the 'veyron/src/main/webapp/' dir:
 
 if necessary:
 
@@ -27,10 +34,8 @@ if necessary:
 
 'bower install'
 
-'gulp'
+'gulp -v' to watch veyron
 
-use './gradlew jettyRun' to check in browser
-
-if need debugging in IntelliJ, just debug 'VeyronServerLauncher'
+'gulp -h' to get help information
 
 chrome to see "http://localhost:8080/"

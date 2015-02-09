@@ -9,7 +9,7 @@ gulp.task('imagemin', function(){
 });
 
 var pipeImage = function(target) {
-    gulp.src(target.src+'images/**/*.{png,jpg,jpeg}')
+    gulp.src(target.src+'*.{png,jpg,jpeg}')
         .pipe(imagemin())
         .pipe(gulp.dest(target.dest))
         .pipe(reload({stream:true}));
