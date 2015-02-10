@@ -4,9 +4,9 @@ var requirDir = require('require-dir');
 
 gulp.opts = {};
 gulp.opts.veyron = {
-    src : 'veyron/**/',
+    src : 'veyron/components/**/',
     dest: '.tmp/'
 };
 gulp.opts.path = {};
 
-requirDir('tasks/', {recurse: true});
+requirDir('gulp/tasks/', {recurse: true});
